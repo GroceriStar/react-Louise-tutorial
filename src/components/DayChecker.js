@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Calender from './Calender';
 
-class App extends Component {
+class DayChecker extends Component {
 
   getDayName(number) {    
     let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];    
@@ -13,18 +12,14 @@ class App extends Component {
     if(today === 6 || today === 0)
       return (
         <div>
-          <div>Today is {this.getDayName(today)} - You can watch TV all day today</div>
-          <Calender></Calender>
+          <div>Today is {this.getDayName(today)} - You can watch TV all day today</div>          
         </div>);
     else
       return (
         <div>
-          <div>Today is {this.getDayName(today)} - You should go to work today</div>
-          <Calender></Calender>
+          <div>Today is {this.getDayName(today)} - You should go to work today</div>          
         </div>);
-  
-    
   }
 }
 
-export default App;
+export default DayChecker;
