@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Month from './Month';
+import DayOfWeek from '../../../data/DayOfWeek';
+import Months from '../../../data/Months';
 
 class Calender extends Component {
-    year = 2018;    
-    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];    
+    year = new Date().getFullYear();
+    months = Months;
+    days = DayOfWeek;
     calender = [];
 
     getCalenderData() {        
@@ -27,7 +29,7 @@ class Calender extends Component {
             <div>                
                 {                    
                     this.getCalenderData().map((month, i) => {
-                        return <Month month={month} days={this.days}></Month>
+                        return <Month month={month} days={this.days} year={this.year}></Month>
                     })
                 }    
             </div>

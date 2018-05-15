@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 
 class Month extends Component {
   
-  render() {        
-      console.log(this.props.month.days);      
+  render() {              
       return <div>
           <br />    
-          <h1>{this.props.month.month}</h1>
+          <h1>{this.props.month.month} {this.props.month.year}</h1>
           {this.props.days+""}    
           <br/>
           {
