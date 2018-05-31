@@ -4,12 +4,14 @@ import MonthChecker from './components/Calendar/MonthChecker';
 import Header from './components/Header/Header';
 import CalenderV2 from './components/Calendar/Calendar-v2';
 import MealPlanV2 from './components/MealPlan/MealPlan-v2';
+import MealPlan from './components/MealPlan/MealPlan';
 
 
 class App extends Component {
   
   render() {
     return [
+      <MealPlan/>,
       <MealPlanV2/>,
       <Header />,      
       <DayChecker />,         
