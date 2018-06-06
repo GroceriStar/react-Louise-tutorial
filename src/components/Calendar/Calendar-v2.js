@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import getCalendarArray from '../../../data/CalendarArray';
-import { getWeekdays, getWeekend } from '../../../data/Weeks';
-import Month from './Month';
+import getCalendarArray from '../../data/CalendarArray';
+import { getWeekdays, getWeekend } from '../../data/Weeks';
+import Month from './Month-v2';
 
 class Calendar extends Component {
   

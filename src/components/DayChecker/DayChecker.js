@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DayOfWeek from '../data/DayOfWeek';
+import DayOfWeek from '../../data/DayOfWeek';
 
 class DayChecker extends Component {
 

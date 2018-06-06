@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Months from '../../../data/Months';
+import Months from '../../data/Months';
 
 class MonthChecker extends Component {
   
