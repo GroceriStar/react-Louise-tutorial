@@ -5,13 +5,15 @@ import Header from './components/Header/Header';
 import CalenderV2 from './components/Calendar/Calendar-v2';
 import MealPlanV2 from './components/MealPlan/MealPlan-v2';
 import MealPlan from './components/MealPlan/MealPlan';
+import CalendarTemplate from './components/Calendar/Calendar-Template';
 
 
 class App extends Component {
   
   render() {
     return [
-      <MealPlan/>,
+      <MealPlan />,
+      <CalendarTemplate/>,
       <MealPlanV2/>,
       <Header />,      
       <DayChecker />,         
